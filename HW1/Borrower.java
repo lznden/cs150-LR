@@ -4,10 +4,10 @@ public class Borrower {
     private String name;
     //Constructor
     public Borrower(String id, String name) {
-        if (id == null || id.isBlank()) {
+        if (id == null || id.isEmpty() || id.trim().isEmpty()) {
             throw new IllegalArgumentException("id cannot be null!");
         }
-        if (name == null || name.isBlank()) {
+        if (name == null || name.isEmpty() || name.trim().isEmpty()) {
             throw new IllegalArgumentException("name cannot be null!");
         }
         this.id = id;

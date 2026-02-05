@@ -1,3 +1,4 @@
+
 public class Book {
     //Fields
     private final String isbn;
@@ -6,15 +7,15 @@ public class Book {
     //Constructor
     public Book(String isbn, String title, String author) {
     
-        if (isbn == null || isbn.isBlank()) {
-            throw new IllegalArgumentException("isbn cannot be null!");
+        if (isbn == null || isbn.isEmpty() || isbn.trim().isEmpty()) {
+            throw new IllegalArgumentException("isbn cannot be null or blank!");
 
         }
-        if (title == null || title.isBlank()) {
+        if (title == null || title.isEmpty() || title.trim().isEmpty()) {
             throw new IllegalArgumentException("title cannot be null!");
 
         }
-        if (author == null || author.isBlank()) {
+        if (author == null || author.isEmpty() || author.trim().isEmpty()) {
             throw new IllegalArgumentException("author cannot be null!");
         
         }
