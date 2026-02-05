@@ -3,7 +3,6 @@ import java.util.NoSuchElementException;
 
 public class IntSinglyLinkedList { 
     private static class Node {
-       
         int value;
         Node next;
        
